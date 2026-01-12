@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asuba</title>
+</head>
+<body>
+  <div style="font-family: Helvetica, Arial, sans-serif; min-width: 1000px; overflow: auto; line-height: 2">
+    <div style="margin: 50px auto; width: 70%; padding: 20px 0">
+      <div style="border-bottom: 1px solid #eee">
+        <p style="font-size: 1.4em; color: #2A9341; text-decoration: none; font-weight: 600">Asuba App</p>
+      </div>
+
+      <p style="font-size: 1.1em">Hi,</p>
+
+      <p>Thank you for requesting email verification. Please use the following OTP to complete your process:</p>
+
+      <table border="0" cellpadding="0" cellspacing="0" align="center"
+             style="max-width: 100px; text-align: center !important; border-radius: 10px; min-width: 80px; border-collapse: collapse; border-spacing: 0; padding: 0;">
+        <tbody>
+          <tr>
+            <td align="center" valign="middle"
+                style="padding: 10px; margin: 10px 0 0; border-spacing: 0; border-radius: 10px; text-align: center !important; background: #2A9341;">
+              <p style="margin: 0 auto; padding: 10px; color: #fff; border-radius: 4px; font-family: sans-serif; font-size: 24px; font-weight: 600; display: block; width: 140px; max-width: 160px;">
+                {{otp}}
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="font-size: 0.9em;">This OTP will expire in <strong>{{expirySeconds}} seconds</strong>.</p>
+
+      <p style="font-size: 0.9em;">Regards,<br />Asuba App</p>
+      <hr style="border: none; border-top: 1px solid #eee" />
+    </div>
+  </div>
+
+  <style>
+    @media (max-width: 600px) {
+      div[style*="min-width: 1000px"] { min-width: auto; }
+    }
+  </style>
+</body>
+</html>
